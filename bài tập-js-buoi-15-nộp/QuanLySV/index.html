@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!--
+        diemTongKet: tongDiem3Mon + diemUuTien
+        diemUuTien: diemTheoArea + diemTheoObject
+
+        Input:
+          + diemC5huanHoiDong
+          + tongDiem3Mon
+          + uUTienTheoArea (input X nếu không uUTienTheoArea / input 0 nếu không uUTienTheoObject)
+
+          Output:
+          + Thí sinh đó đậu || rớt (diemTongKet >= diemChuan && không có môn nào 0 điểm)
+          + Tổng điểm đạt được => diemTongKet 
+  -->
+  <div>
+    <h2>Quản Lý Tuyển Sinh</h2>
+    <span>Điểm chuẩn council </span><input id = "diemChuan"type="number"><br><br>
+    <span>Điểm môn 1 </span><input id = "Diem1"type="number"><br><br>
+    <span>Điểm môn 2 </span><input id = "Diem2"type="number"><br><br>
+    <span>Điểm môn 3 </span><input id = "Diem3"type="number"><br><br>
+    <span>Khu vực </span><input id = "khuVuc"type="text"><br><br>
+    <span>Đối tượng dự thi </span><input id = "doiTuong"type="number"><br><br>
+
+    <button onclick = "layThongTinQuanLyTuyenSinh()">Click vào đây để hiển thị kết quả</button>
+  
+    <div id = "khuVucBaiTap1"></div>
+    <div id = "doiTuongBaiTap1"></div>
+    <div id = "tongDiemUuTienBaiTap1"></div>
+    <div id = "tongDiem3Mon"></div>
+    <div id = "diemTongKyThi"></div>
+    <div id = "ketQuaQuanLyTuyenSinh"></div>
+
+    <script src="./index.js"></script>
+  </div><br>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
